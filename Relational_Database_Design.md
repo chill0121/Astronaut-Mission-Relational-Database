@@ -4,16 +4,16 @@ An example of Relational Database Design.
 
 ---
 
-## Table of Contents <a name="TOC"></a>
+## Table of Contents <a name="toc"></a>
 - [Step 1: Background - NASA Database](#back)
-- [Step 2: Build the Entity Relationship Model](#ERM)
-- [Step 3: Create the Entity Relationship Diagram](#ERD)
-- [Step 4: Convert to a Relational Model](#RM)
+- [Step 2: Build the Entity Relationship Model](#erm)
+- [Step 3: Create the Entity Relationship Diagram](#erd)
+- [Step 4: Convert to a Relational Model](#rm)
 - [Step 5: Normalize the Relational Model](#norm)
     - [Mapping Functional Dependencies](#FD)
     - [First Normal Form (1NF)](#1nf)
-    - [Second Normal Form (2NF)](#2NF)
-    - [Third Normal Form (3NF)](#3NF)
+    - [Second Normal Form (2NF)](#2nf)
+    - [Third Normal Form (3NF)](#3nf)
 - [Step 6: Finalized Relational Model](#final)
 
 ---
@@ -28,7 +28,7 @@ With the predicted increase in solar activity this year, NASA is building contin
 
 ## Step 2:
 
-### Build the Entity Relationship Model <a name="ERM"></a>
+### Build the Entity Relationship Model <a name="erm"></a>
 
 *Note: An asterisk (\*) denotes a primary key or candidate key of the entity.*
 
@@ -54,13 +54,13 @@ With the predicted increase in solar activity this year, NASA is building contin
 
 ## Step 3:
 
-### Create the Entity Relationship Diagram <a name="ERD"></a>
+### Create the Entity Relationship Diagram <a name="erd"></a>
 
 <img src="Final_NASA_ERD.png" alt="ERD" width="600"/>
 
 ## Step 4:
 
-### Convert the ERD to the Relational Model <a name="RM"></a>
+### Convert the ERD to the Relational Model <a name="rm"></a>
 
 *Note: An <u>underline</u> denotes a primary key or candidate key of the relation, and (fk) denotes a foreign key.*
 
@@ -151,7 +151,7 @@ Before normalization, we need to map out the Functional Dependencies (FD) of the
 
 - None, the relational model is already in 1NF.
 
-### Second Normal Form (2NF) <a name="2NF"></a>
+### Second Normal Form (2NF) <a name="2nf"></a>
 
 *For ease of following along, relations with no functional dependencies will be removed temporarily until the the end of conversions.*
 
@@ -180,7 +180,7 @@ Before normalization, we need to map out the Functional Dependencies (FD) of the
 - Removed all partial functional dependencies (see ~~strikethrough~~ notation and new foreign keys (fk)).
     - In `Spacecraft`, turn <u>Callsign</u> into a foreign key, remove Crew and CrewSize, and place them in their own relation, `Spacecraft_Callsign_Crew` keeping Callsign as the primary key.
 
-### Third Normal Form (3NF) <a name="3NF"></a>
+### Third Normal Form (3NF) <a name="3nf"></a>
 
 *For ease of following along, relations with no functional dependencies will be removed temporarily until the the end of conversions.*
 
@@ -264,4 +264,4 @@ Final model with the temporarily removed relations without functional dependenci
 - `Training_Missions` (<u>MissionID(fk)</u>, <u>TrainingID(fk)</u>)
     - No non-primary-key attributes; no dependencies.
 
-###### [Back to Table of Contents](#TOC)
+###### [Back to Table of Contents](#toc)

@@ -14599,16 +14599,16 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h1 id="NASA-Astronaut-and-Mission-Database">NASA Astronaut and Mission Database<a class="anchor-link" href="#NASA-Astronaut-and-Mission-Database">&#182;</a></h1><p>An example of Relational Database Design.</p>
 <hr>
-<h2 id="Table-of-Contents-">Table of Contents <a name="TOC" /><a class="anchor-link" href="#Table-of-Contents-">&#182;</a></h2><ul>
+<h2 id="Table-of-Contents-">Table of Contents <a name="toc" /><a class="anchor-link" href="#Table-of-Contents-">&#182;</a></h2><ul>
 <li><a href="#back">Step 1: Background - NASA Database</a></li>
-<li><a href="#ERM">Step 2: Build the Entity Relationship Model</a></li>
-<li><a href="#ERD">Step 3: Create the Entity Relationship Diagram</a></li>
-<li><a href="#RM">Step 4: Convert to a Relational Model</a></li>
+<li><a href="#erm">Step 2: Build the Entity Relationship Model</a></li>
+<li><a href="#erd">Step 3: Create the Entity Relationship Diagram</a></li>
+<li><a href="#rm">Step 4: Convert to a Relational Model</a></li>
 <li><a href="#norm">Step 5: Normalize the Relational Model</a><ul>
 <li><a href="#FD">Mapping Functional Dependencies</a></li>
-<li><a href="#1NF">First Normal Form (1NF)</a></li>
-<li><a href="#2NF">Second Normal Form (2NF)</a></li>
-<li><a href="#3NF">Third Normal Form (3NF)</a></li>
+<li><a href="#1nf">First Normal Form (1NF)</a></li>
+<li><a href="#2nf">Second Normal Form (2NF)</a></li>
+<li><a href="#3nf">Third Normal Form (3NF)</a></li>
 </ul>
 </li>
 <li><a href="#final">Step 6: Finalized Relational Model</a></li>
@@ -14638,7 +14638,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Step-2:">Step 2:<a class="anchor-link" href="#Step-2:">&#182;</a></h2><h3 id="Build-the-Entity-Relationship-Model-">Build the Entity Relationship Model <a name="ERM" /><a class="anchor-link" href="#Build-the-Entity-Relationship-Model-">&#182;</a></h3><p><em>Note: An asterisk (\</em>) denotes a primary key or candidate key of the entity.*</p>
+<h2 id="Step-2:">Step 2:<a class="anchor-link" href="#Step-2:">&#182;</a></h2><h3 id="Build-the-Entity-Relationship-Model-">Build the Entity Relationship Model <a name="erm" /><a class="anchor-link" href="#Build-the-Entity-Relationship-Model-">&#182;</a></h3><p><em>Note: An asterisk (\</em>) denotes a primary key or candidate key of the entity.*</p>
 <p><strong>Entities:</strong></p>
 <ul>
 <li><code>Astronauts</code>: *EmployeeID, FirstName, LastName, Address, MissionsFlown, DoB, EmergencyContact, FlightHours, Specialization, Rank, Nationality</li>
@@ -14672,7 +14672,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Step-3:">Step 3:<a class="anchor-link" href="#Step-3:">&#182;</a></h2><h3 id="Create-the-Entity-Relationship-Diagram-">Create the Entity Relationship Diagram <a name="ERD" /><a class="anchor-link" href="#Create-the-Entity-Relationship-Diagram-">&#182;</a></h3><p><img src="Final_NASA_ERD.png" alt="ERD" width="600"/></p>
+<h2 id="Step-3:">Step 3:<a class="anchor-link" href="#Step-3:">&#182;</a></h2><h3 id="Create-the-Entity-Relationship-Diagram-">Create the Entity Relationship Diagram <a name="erd" /><a class="anchor-link" href="#Create-the-Entity-Relationship-Diagram-">&#182;</a></h3><p><img src="Final_NASA_ERD.png" alt="ERD" width="600"/></p>
 
 </div>
 </div>
@@ -14684,7 +14684,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Step-4:">Step 4:<a class="anchor-link" href="#Step-4:">&#182;</a></h2><h3 id="Convert-the-ERD-to-the-Relational-Model-">Convert the ERD to the Relational Model <a name="RM" /><a class="anchor-link" href="#Convert-the-ERD-to-the-Relational-Model-">&#182;</a></h3><p><em>Note: An <u>underline</u> denotes a primary key or candidate key of the relation, and (fk) denotes a foreign key.</em></p>
+<h2 id="Step-4:">Step 4:<a class="anchor-link" href="#Step-4:">&#182;</a></h2><h3 id="Convert-the-ERD-to-the-Relational-Model-">Convert the ERD to the Relational Model <a name="rm" /><a class="anchor-link" href="#Convert-the-ERD-to-the-Relational-Model-">&#182;</a></h3><p><em>Note: An <u>underline</u> denotes a primary key or candidate key of the relation, and (fk) denotes a foreign key.</em></p>
 <p><strong>Relations:</strong></p>
 <ul>
 <li><code>Astronauts</code> (<u>EmployeeID</u>, FirstName, LastName, Address, MissionsFlown, DoB, EmergencyContact, FlightHours, Specialization, Rank, Nationality)</li>
@@ -14791,7 +14791,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="First-Normal-Form-(1NF)-">First Normal Form (1NF) <a name="1NF" /><a class="anchor-link" href="#First-Normal-Form-(1NF)-">&#182;</a></h3><p><em>For ease of following along, relations with no functional dependencies will be removed temporarily until the the end of conversions.</em></p>
+<h3 id="First-Normal-Form-(1NF)-">First Normal Form (1NF) <a name="1nf" /><a class="anchor-link" href="#First-Normal-Form-(1NF)-">&#182;</a></h3><p><em>For ease of following along, relations with no functional dependencies will be removed temporarily until the the end of conversions.</em></p>
 <ul>
 <li><code>Astronauts</code> (<u>EmployeeID</u>, FirstName, LastName, Address, MissionsFlown, DoB, EmergencyContact, FlightHours, Specialization, Rank, Nationality)<ul>
 <li>FD1: <u>EmployeeID</u> → FirstName, LastName, Address, MissionsFlown, DoB, EmergencyContact, FlightHours, Specialization, Rank, Nationality</li>
@@ -14849,7 +14849,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="Second-Normal-Form-(2NF)-">Second Normal Form (2NF) <a name="2NF" /><a class="anchor-link" href="#Second-Normal-Form-(2NF)-">&#182;</a></h3><p><em>For ease of following along, relations with no functional dependencies will be removed temporarily until the the end of conversions.</em></p>
+<h3 id="Second-Normal-Form-(2NF)-">Second Normal Form (2NF) <a name="2nf" /><a class="anchor-link" href="#Second-Normal-Form-(2NF)-">&#182;</a></h3><p><em>For ease of following along, relations with no functional dependencies will be removed temporarily until the the end of conversions.</em></p>
 <ul>
 <li><code>Astronauts</code> (<u>EmployeeID</u>, FirstName, LastName, Address, MissionsFlown, DoB, EmergencyContact, FlightHours, Specialization, Rank, Nationality)<ul>
 <li>FD1: EmployeeID → FirstName, LastName, Address, MissionsFlown, DoB, EmergencyContact, FlightHours, Specialization, Rank, Nationality</li>
@@ -14914,7 +14914,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="Third-Normal-Form-(3NF)-">Third Normal Form (3NF) <a name="3NF" /><a class="anchor-link" href="#Third-Normal-Form-(3NF)-">&#182;</a></h3><p><em>For ease of following along, relations with no functional dependencies will be removed temporarily until the the end of conversions.</em></p>
+<h3 id="Third-Normal-Form-(3NF)-">Third Normal Form (3NF) <a name="3nf" /><a class="anchor-link" href="#Third-Normal-Form-(3NF)-">&#182;</a></h3><p><em>For ease of following along, relations with no functional dependencies will be removed temporarily until the the end of conversions.</em></p>
 <ul>
 <li><code>Astronauts</code> (<u>EmployeeID</u>, FirstName, LastName, Address, MissionsFlown, DoB, EmergencyContact, FlightHours, Specialization, Rank, Nationality)<ul>
 <li>FD1: <u>EmployeeID</u> → FirstName, LastName, Address, MissionsFlown, DoB, EmergencyContact, FlightHours, Specialization, Rank, Nationality</li>
@@ -15076,7 +15076,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </ul>
 </li>
 </ul>
-<h6 id="Back-to-Table-of-Contents"><a href="#TOC">Back to Table of Contents</a><a class="anchor-link" href="#Back-to-Table-of-Contents">&#182;</a></h6>
+<h6 id="Back-to-Table-of-Contents"><a href="#toc">Back to Table of Contents</a><a class="anchor-link" href="#Back-to-Table-of-Contents">&#182;</a></h6>
 </div>
 </div>
 </div>
