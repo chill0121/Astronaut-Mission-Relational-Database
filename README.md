@@ -3,4 +3,4 @@
  
  Starting from designing an entity relationship model, to a entity relationship diagram, converting into a relational model, and through the normalization process.
 
- Exported to markdown and HTML for reading convenience.
+ Exported to markdown and HTML for reading convenience. Note some formatting is not supported in markdown (underline).
