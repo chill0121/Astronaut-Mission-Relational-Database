@@ -11,7 +11,7 @@ An example of Relational Database Design.
 - [Step 4: Convert to a Relational Model](#RM)
 - [Step 5: Normalize the Relational Model](#norm)
     - [Mapping Functional Dependencies](#FD)
-    - [First Normal Form (1NF)](#1NF)
+    - [First Normal Form (1NF)](#1nf)
     - [Second Normal Form (2NF)](#2NF)
     - [Third Normal Form (3NF)](#3NF)
 - [Step 6: Finalized Relational Model](#final)
@@ -125,7 +125,7 @@ Before normalization, we need to map out the Functional Dependencies (FD) of the
 - `Training_Missions` (<u>MissionID(fk)</u>, <u>TrainingID(fk)</u>)
     - No non-primary-key attributes; no dependencies.
 
-### First Normal Form (1NF) <a name="1NF"></a>
+### First Normal Form (1NF) <a name="1nf"></a>
 
 *For ease of following along, relations with no functional dependencies will be removed temporarily until the the end of conversions.*
 
